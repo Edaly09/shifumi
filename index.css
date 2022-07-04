@@ -1,0 +1,41 @@
+.robot{
+    width: 200px;
+    margin-bottom: 80px;
+}
+.humain{
+    width: 200px;
+}
+.Hm{
+    margin-top: 20px;
+    gap: 10px;
+    display: flex;
+
+}
+.Hm button{
+    border-radius: 4px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.IT{
+    display: flex;
+    gap: 200px;
+    justify-content: center;
+    margin-top: 80px;
+}
+.PO{
+    width: 150px;
+}
+h1,p{
+    text-align: center;
+    
+}
+.vs{
+    width: 180px;
+}
+header{
+    display: flex;
+    gap: 600px;
+}
+
