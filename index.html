@@ -10,34 +10,57 @@
 <body>
    
         <header>
-
-             <img src="./images/PO.png" class="PO" alt=""> 
+             <img src="./images/PO.png"  class="PO" alt=""> 
         </header>
         <P>Bienvenue dans mon Jeu</P>
-        <h1 id="shifumi">SHIFUMI</h1> 
+        <div  id="shifumi">
+             <h1>SHIFUMI</h1>
+        </div> 
+
         <div class="IT">
         <section >
-            <div id="robot">
-             <img src="./images/robot.webp" class="robot" alt=""> 
-            </div>
-
+                <div id="score2">
+                    <p class="score">score: 0 pts</p>
+                </div>
+                <div id="robot">
+                    <img src="./images/robot.webp"  class="robot" alt=""> 
+                </div>
         </section>
   
-           <section>
-            <img src="./images/VS.png" class="vs" alt="">
-           </section>
-        <section >
-            <div id="humain">
-            <img src="./images/humain.jpg" class="humain" alt="">
-           </div>
-            <div class="Hm">
-            <button id="pie">Pierre</button>
-            <button id="feu">Feuille</button>
-            <button id="cis">ciseaux</button>
-        </div>
+        <section class="oppo">
+             <img src="./images/VS.png" class="vs" alt="">
         </section>
-     </div>
+        <section >
+                <div id="score1">
+                     <p class="score">score: 0 pts</p>
+                </div>
+                <div id="humain">
+                     <img src="./images/humain.jpg" class="humain" alt="">
+                </div>
 
+                <div class="Hm">
+                        <button id="pie">Pierre</button>
+                        <button id="feu">Feuille</button>
+                        <button id="cis">ciseaux</button>
+               </div>
+      </section>
+      </div>
+    
+      <div id="fin" class="commentaires">
+             <p class="commentaires">Lequel d'entre ces joueus va remporter la manche</p>
+      </div>
+      <div id="button">
+      </div>
+      <div id="detail" class="Detail">
+        <p></p>
+        <h1> </h1>
+        <h2> </h2>
+        <h2> </h2>
+        <h2> </h2>
+        <h2> </h2>
+
+        
+        </div>
         <script src="index.js"></script>
 </body>
 </html>

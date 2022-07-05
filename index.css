@@ -1,41 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&display=swap');
+/* font-family: 'Rubik Moonrocks', cursive; */
+
+
+
 .robot{
-    width: 200px;
-    margin-bottom: 80px;
+        width: 200px;
+        margin-bottom: 80px;
+        border-radius: 48px;
 }
+
 .humain{
-    width: 200px;
+        width: 200px;
+        border-radius: 45px;
 }
 .Hm{
-    margin-top: 20px;
-    gap: 10px;
-    display: flex;
+        margin-top: 20px;
+        gap: 10px;
+        display: flex;
 
 }
 .Hm button{
-    border-radius: 4px;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 5px;
-    padding-bottom: 5px;
+        border-radius: 4px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 5px;
+        padding-bottom: 5px;
 }
 .IT{
-    display: flex;
-    gap: 200px;
-    justify-content: center;
-    margin-top: 80px;
+        display: flex;
+        gap: 200px;
+        justify-content: center;
+        margin-top: 80px;
+
+}
+.score{
+        font-size: x-large;
+        font-weight: bold;
 }
 .PO{
-    width: 150px;
+        width: 150px;
+  
 }
 h1,p{
-    text-align: center;
+        text-align: center;
+        font-family: 'Rubik Moonrocks', cursive;
+        font-size: x-large;
     
 }
+h2{
+     font-family: 'Rubik Moonrocks', cursive;
+
+}
 .vs{
-    width: 180px;
+     width: 180px;
+    
 }
 header{
-    display: flex;
-    gap: 600px;
+        display: flex;
+        gap: 600px;
 }
+.newia{
+        display: flex;
+        gap: 45px;
+}
+.commentaires{
+     text-align: center;
+}
+.Detail{
+     text-align: center;
+}
+.buttoN{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        color: blue;
+}
+#fin{
+        font-size: xx-large;
+        font-family: 'Rubik Moonrocks', cursive;
 
+}
