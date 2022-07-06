@@ -72,10 +72,17 @@ header{
 .buttoN{
         margin-top: 20px;
         margin-bottom: 20px;
-        color: blue;
+        color: white;
+        border-radius: 15px;
+        background-color: rgb(45, 25, 158);    
 }
 #fin{
         font-size: xx-large;
         font-family: 'Rubik Moonrocks', cursive;
 
+}
+.pie{
+        color: white;
+        border-radius: 15px;
+        background-color: rgb(45, 25, 158);    
 }

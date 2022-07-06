@@ -8,6 +8,7 @@ let scoreOrdi = 0
   const pierFunction = () => {
       choixJoueur = "rock"
       humain.innerHTML = `<img src="./images/1-pierre.jpg" class="humain" alt="">`
+
       inteligenceFunction()
       resultatGame()
 }
@@ -32,6 +33,7 @@ butt.addEventListener("click", paperFunction)
 const scissorsFunction = () =>{
     choixJoueur = "scissors"
     humain.innerHTML = `<img src="./images/3-ciseaux.jpg" class="humain" alt="">`
+
     inteligenceFunction()
     resultatGame()  
 
@@ -59,11 +61,12 @@ else if(random === 2){
     ordi ="paper"
     robot.innerHTML = `<img src="./images/2-feuille.jpg" class="humain" alt="">`
 
-
 }
 else if(random === 3){
       ordi = "scissors"
       robot.innerHTML = `<img src="./images/3-ciseaux.jpg" class="humain" alt="">`  
+
+
 }
 else{
     `<img src=" ./images/robot.webp" class="robot" alt="">`
@@ -87,12 +90,12 @@ const rps = (p1, p2) => {
     score1.innerHTML =  `<p>${scorJoueur} points</p>`
     score2.innerHTML =  `<p>${scoreOrdi} points</p>`
 
-
     return "Player 1 won!"
   }
     else if(p1 === "scissors" && p2 ===  "scissors"){
 
     shifumi.innerHTML = `<h1>DRAW !</h1>`
+
 
       return "Draw!"
     }
@@ -109,6 +112,7 @@ const rps = (p1, p2) => {
   }
   else if(p1 === "paper" && p2 ===  "paper"){
     shifumi.innerHTML = `<h1>Draw!</h1>`
+
     return "Draw!"
   }
     else if(p1 === "paper" && p2 ==="scissors"){
@@ -118,13 +122,12 @@ const rps = (p1, p2) => {
     score1.innerHTML =  `<p>${scorJoueur} points</p>`
     score2.innerHTML =  `<p>${scoreOrdi} points</p>`
 
-
     return  "Player 2 won!"
     }
     else if( p1 === "paper" && p2 ==="rock"){
     scorJoueur = scorJoueur + 1
 
-      shifumi.innerHTML = `<h1>TU AS GAGNE </h1>`
+    shifumi.innerHTML = `<h1>TU AS GAGNE </h1>`
     score1.innerHTML =  `<p>${scorJoueur} points</p>`
     score2.innerHTML =  `<p>${scoreOrdi} points</p>`
 
@@ -134,6 +137,7 @@ const rps = (p1, p2) => {
     }
     else if(p1 === "rock" && p2 ==="rock"){
       shifumi.innerHTML = `<h1>DRAW ! </h1>`
+
     return "Draw!"
 
     }
@@ -143,6 +147,8 @@ const rps = (p1, p2) => {
         shifumi.innerHTML = `<h1>IA AS GAGNE </h1>`
         score1.innerHTML =  `<p>${scorJoueur} points</p>`
         score2.innerHTML =  `<p>${scoreOrdi} points</p>`
+
+
         return  "Player 2 won!"
     }
     else if(p1 === "rock" && p2 ==="scissors"){
@@ -151,6 +157,7 @@ const rps = (p1, p2) => {
         shifumi.innerHTML = `<h1>TU AS GAGNE </h1>`
         score1.innerHTML =  `<p>${scorJoueur} points</p>`
         score2.innerHTML =  `<p>${scoreOrdi} points</p>`
+
         return  "Player 1 won!"
     }
     
@@ -161,22 +168,7 @@ const resultatGame = () =>{
         fin.innerHTML = ` ${scoreOrdi} : ${scorJoueur} `
         robot.innerHTML = `<img src="./images/bad.gif"class="robot" alt="">`
         humain.innerHTML = `<img src="./images/200w.webp" class="humain" alt="">`
-
-        
-
-        button.innerHTML = `<button>Recommencer</button>`
-
-        detail.innerHTML = `<p>Historiques</p>
-        <h1>ROUND 1</h1>
-        ${choixJoueur}
-        ${ordi}
-        <h2>ROUND 2</h2>
-        ${choixJoueur}
-        ${ordi}
-        <h2>ROUND 3</h2>
-        ${choixJoueur}
-        ${ordi}`
-      
+        button.innerHTML = `<button class="buttoN">Recommencer</button>`
 
     }
     else if( scoreOrdi === 3){
@@ -185,16 +177,7 @@ const resultatGame = () =>{
       robot.innerHTML = `<img src="./images/200w.webp" class="robot" alt="">`
       fin.innerHTML = ` ${scoreOrdi} : ${scorJoueur}  `
       button.innerHTML = `<button class="buttoN">Recommencer</button>`
-      detail.innerHTML = `<p>Historique</p>
-      <h1>ROUND 1</h1>
-      ${choixJoueur}
-      ${ordi}
-      <h2>ROUND 2</h2>
-      ${choixJoueur}
-      ${ordi}
-      <h2>ROUND 3</h2>
-      ${choixJoueur}
-      ${ordi}`
+    
     
     }
     else if(scorJoueur > 3){
@@ -207,22 +190,22 @@ const resultatGame = () =>{
 }
 
 const replayGame = () =>{
-    robot.innerHTML = `<img src="./images/robot.webp"  class="robot" alt=""> `
-    humain.innerHTML = `<img src="./images/humain.jpg" class="humain" alt="">`
-    detail.innerHTML = ``
-    fin.innerHTML = ``
-    button.innerHTML = ``
-    score1.innerHTML = ``
-    score2.innerHTML = ``
-    shifumi.innerHTML = `<h1>SHIFUMI</h1>`
-
-
+    location.reload();
 }
 
 const Recommencer = document.getElementById("button")
 Recommencer.addEventListener("click", replayGame)
 
 
-
+// detail.innerHTML = `<p>Historiques</p>
+// <h1>ROUND 1</h1>
+// ${choixJoueur}
+// ${ordi}
+// <h2>ROUND 2</h2>
+// ${choixJoueur}
+// ${ordi}
+// <h2>ROUND 3</h2>
+// ${choixJoueur}
+// ${ordi}`
 
 
