@@ -86,3 +86,30 @@ header{
         border-radius: 15px;
         background-color: rgb(45, 25, 158);    
 }
+
+@media (max-width:768px) {
+        .IT{
+                display: block;
+                /* gap: 200px; */
+                /* justify-content: center; */
+                margin-top: 80px;    
+                width: auto;
+                margin-left: 48px;
+        }
+        .vs{
+              display: none;
+        }
+        .score{
+                font-size: x-large;
+                font-weight: bold;
+        }
+        #score1{
+                margin-right: 38px;
+        }
+        #score2{
+                margin-right: 34px;
+        }
+        body{
+                position: absolute;
+        }
+}
