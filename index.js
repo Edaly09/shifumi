@@ -169,6 +169,8 @@ const resultatGame = () =>{
         robot.innerHTML = `<img src="./images/bad.gif"class="robot" alt="">`
         humain.innerHTML = `<img src="./images/200w.webp" class="humain" alt="">`
         button.innerHTML = `<button class="buttoN">Recommencer</button>`
+        buttonn.innerHTML = `<button class="buttoN">Suivant</button>`
+
 
     }
     else if( scoreOrdi === 3){
@@ -197,6 +199,29 @@ const Recommencer = document.getElementById("button")
 Recommencer.addEventListener("click", replayGame)
 
 
+const nextParty = () =>{
+  if(scorJoueur === 3){
+    robot.innerHTML = `<img src="./images/shiff1.jpg" alt="shiff1">`
+    humain.innerHTML = `<img src="./images/shiff2.jpg" alt="shiff2">`
+    fin.innerHTML = ``
+    score1.innerHTML =  `<p> 0 points</p>`
+    score2.innerHTML =  `<p> 0 points</p>`
+    button.innerHTML = ``
+    buttonn.innerHTML = ``
+    shifumi.innerHTML = `<h1>Nice tu es passé ce level</h1>`
+    scorJoueur=0
+    scoreOrdi=0
+
+
+
+
+}
+}
+
+const Suivant = document.getElementById("buttonn")
+Suivant.addEventListener("click", nextParty,replayGame)
+
+
 // detail.innerHTML = `<p>Historiques</p>
 // <h1>ROUND 1</h1>
 // ${choixJoueur}
@@ -207,5 +232,3 @@ Recommencer.addEventListener("click", replayGame)
 // <h2>ROUND 3</h2>
 // ${choixJoueur}
 // ${ordi}`
-
-
