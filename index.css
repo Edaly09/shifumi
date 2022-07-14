@@ -12,6 +12,7 @@
 .humain{
         width: 200px;
         border-radius: 45px;
+
 }
 .Hm{
         margin-top: 20px;
@@ -93,8 +94,20 @@ header{
                 /* gap: 200px; */
                 /* justify-content: center; */
                 margin-top: 80px;    
-                width: auto;
+                width: 100%;
                 margin-left: 48px;
+        }
+        body{
+                background-color: rgb(73, 73, 163);
+
+        }
+        .PO{
+                border-radius: 60px;
+                background-color: rgb(73, 73, 163);
+
+        }
+        header{
+                display: none;
         }
         .vs{
               display: none;
@@ -112,4 +125,14 @@ header{
         body{
                 position: absolute;
         }
+        .robot{
+                margin-left: 50px;
+
+        }
+        .humain{
+                margin-left: 50px;
+
+        }
+
+
 }
