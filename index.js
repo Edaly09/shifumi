@@ -177,7 +177,7 @@ const resultatGame = () =>{
       
       humain.innerHTML = `<img src="./images/bad.gif" class="humain" alt=""> `
       robot.innerHTML = `<img src="./images/200w.webp" class="robot" alt="">`
-      fin.innerHTML = ` ${scoreOrdi} : ${scorJoueur}  `
+      fin.innerHTML = `Computer ${scoreOrdi} : ${scorJoueur} User  `
       button.innerHTML = `<button class="buttoN">Recommencer</button>`
     
     
@@ -208,7 +208,7 @@ const nextParty = () =>{
     score2.innerHTML =  `<p> 0 points</p>`
     button.innerHTML = ``
     buttonn.innerHTML = ``
-    shifumi.innerHTML = `<h1>Nice tu es passé ce level</h1>`
+    shifumi.innerHTML = `<h1>Nice tu a passé ce level</h1>`
     scorJoueur=0
     scoreOrdi=0
 
