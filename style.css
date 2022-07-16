@@ -44,12 +44,13 @@
 }
 h1,p{
         text-align: center;
-        font-family: 'Rubik Moonrocks', cursive;
+        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
         font-size: x-large;
+        font-style: oblique;
     
 }
 h2{
-     font-family: 'Rubik Moonrocks', cursive;
+     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
 }
 .vs{
@@ -135,4 +136,8 @@ header{
         }
 
 
+}
+#particles-js{
+        background-color: white;
+        
 }

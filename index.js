@@ -4,6 +4,9 @@ let choixJoueur = ""
 let ordi = ""
 let scorJoueur = 0
 let scoreOrdi = 0
+const max = 3
+const min = 1
+let random
 
   const pierFunction = () => {
       choixJoueur = "rock"
@@ -32,7 +35,7 @@ butt.addEventListener("click", paperFunction)
 
 const scissorsFunction = () =>{
     choixJoueur = "scissors"
-    humain.innerHTML = `<img src="./images/3-ciseaux.jpg" class="humain" alt="">`
+    humain.innerHTML = `<img src="./images/cisseaux gif.webp" alt=""> `
 
     inteligenceFunction()
     resultatGame()  
@@ -48,9 +51,8 @@ butto.addEventListener("click", scissorsFunction)
 // La partie de l'intelligence artificielle
 
 const inteligenceFunction = () =>{
-const max = 3
-const min = 1
-const random = Math.floor(Math.random() * max) + min
+
+ random = Math.floor(Math.random() * max) + min
 
 
 if(random === 1){
@@ -64,7 +66,8 @@ else if(random === 2){
 }
 else if(random === 3){
       ordi = "scissors"
-      robot.innerHTML = `<img src="./images/3-ciseaux.jpg" class="humain" alt="">`  
+      robot.innerHTML = `<img src="./images/cisseaux gif.webp" alt="cisseaux">
+      `  
 
 
 }
