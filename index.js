@@ -173,15 +173,17 @@ const resultatGame = () =>{
         humain.innerHTML = `<img src="./images/200w.webp" class="humain" alt="">`
         button.innerHTML = `<button class="buttoN">Recommencer</button>`
         buttonn.innerHTML = `<button class="buttoN">Suivant</button>`
-
+        Hm.innerHTML = ``
 
     }
     else if( scoreOrdi === 3){
       
       humain.innerHTML = `<img src="./images/bad.gif" class="humain" alt=""> `
       robot.innerHTML = `<img src="./images/200w.webp" class="robot" alt="">`
-      fin.innerHTML = `Computer ${scoreOrdi} : ${scorJoueur} User  `
+      fin.innerHTML = ` ${scoreOrdi} : ${scorJoueur}  `
       button.innerHTML = `<button class="buttoN">Recommencer</button>`
+      Hm.innerHTML = ``
+
     
     
     }
@@ -224,14 +226,3 @@ const nextParty = () =>{
 const Suivant = document.getElementById("buttonn")
 Suivant.addEventListener("click", nextParty,replayGame)
 
-
-// detail.innerHTML = `<p>Historiques</p>
-// <h1>ROUND 1</h1>
-// ${choixJoueur}
-// ${ordi}
-// <h2>ROUND 2</h2>
-// ${choixJoueur}
-// ${ordi}
-// <h2>ROUND 3</h2>
-// ${choixJoueur}
-// ${ordi}`
